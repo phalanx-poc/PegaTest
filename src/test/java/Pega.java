@@ -24,7 +24,7 @@ public class Pega {
             chromeOptions.addArguments("--disable-dev-shm-usage");
             chromeOptions.addArguments("start-maximized");
             capabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
-            System.setProperty("webdriver.chrome.driver", "/usr/bin");
+            System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
             driver = new ChromeDriver(capabilities);
         } else {
             DesiredCapabilities capabilities = new DesiredCapabilities();
